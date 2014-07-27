@@ -1,0 +1,202 @@
+.date-picker{
+    background: #FFFFFF;
+    box-shadow: 0px 7px 13px -4px rgba(0, 0, 0, 0.65);
+    display: inline-block;
+    width: 400px;    
+}
+
+.date-picker:after,.date-picker:before {
+    content: '';
+    display: table;
+}
+
+.date-picker:after{
+    clear: both;
+}
+.date-wrap{ padding: 10px; }
+.date-picker .date-title,
+.date-picker .date-days .day,
+.date-picker .d{
+	color: #2A3136;
+	font-family: Helvetica;    	
+	/* font-size: 14px; */
+	/* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.12); */
+}
+
+.date-picker .date-title{        
+    text-align: center;    
+    box-sizing: border-box;	
+	-moz-box-sizing: border-box;		
+	font-size: 18px;	
+	overflow: hidden;
+    border-bottom: 1px solid #E0E0E0;
+}
+.date-picker .date-btn,
+.date-picker .date-center{
+	float: left;
+	line-height: 50px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+	  /* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;     
+}
+
+.date-picker .date-btn{
+	cursor: pointer;
+	text-align: center;
+	width: 5%;
+	/* background: #1880C7; */
+}
+
+.date-picker .date-btn:active{
+	background: #388fc9;
+}
+
+.date-picker .date-center{
+	width: 90%;
+	color: #86CFF8;
+}
+
+.date-picker .date-days{        
+    box-sizing: border-box;
+	-moz-box-sizing: border-box;	    
+    overflow: hidden;	
+	
+	padding: 10px 0;
+	margin-bottom: 5px;	
+}
+
+.date-picker .date-days .day{
+    float: left;    
+    width: 14%;    
+    text-align: center;
+    text-transform: uppercase;
+}
+.date-picker .d{
+	float: left;
+	width: 14%;
+	text-align: center;	
+	border: 1px solid transparent;
+	border-left: none;
+	border-top: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	padding: 15px;
+	cursor: pointer;
+}
+
+.now.d.curr {
+	color: #0C7191;
+	border-right: 1px solid rgba(42, 213, 83, 0.67);
+	border-bottom: 1px solid rgba(55, 198, 243, 0.56);
+	border-left: 1px solid rgba(55, 198, 243, 0.56);
+	border-top: 1px solid rgba(42, 213, 83, 0.67);
+	border-radius: 50%;
+}
+
+
+.date-picker .prev.d,
+.date-picker .next.d{	
+	color: #E7E7E7;
+}
+
+.date-picker .date-sepa{    
+    height: 2px;
+    clear: both;
+	-webkit-transition: all .3s ease-in;
+	   -moz-transition: all .3s ease-in;
+	    -ms-transition: all .3s ease-in;
+	     -o-transition: all .3s ease-in;
+	        transition: all .3s ease-in;
+}
+
+.date-picker .date-reveal{
+	height: auto;
+	background: #347CAC;
+}
+
+.date-picker .date-reveal .date-detail {
+    height: 60px;	
+    border-bottom: 1px solid #2B6E9B;
+    border-top: 1px solid #458DBD;
+}
+
+.date-picker .date-detail .left{	
+	width: 25%;
+}
+.date-picker .date-detail .right{	
+	width: 65%;
+	text-align: left;	
+	text-indent: 19px;
+}
+
+.date-picker .date-detail .left,
+.date-picker .date-detail .right{	
+	display: none;
+	float: left;
+	line-height: 60px;	
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);	
+	color: #fff;
+}
+
+.date-picker .date-reveal .date-detail .right{
+	font-size: 11px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.date-picker .date-reveal .date-detail .left,
+.date-picker .date-reveal .date-detail .right{
+	display: block;		
+}
+
+.date-picker .date-reveal .date-detail:last-child{
+	border-bottom: 1px solid #49B0F5;
+}
+
+.date-picker .date-reveal .date-detail:first-child{
+	border-top: none;
+}
+.date-picker .date-days .day:last-child {
+    color: #FFB3C2;
+}
+.d.caret {
+    position: relative;
+}
+.d.caret:after {
+    position: absolute;
+    bottom: -1px;
+    left: 40%;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid transparent;
+	border-right: 7px solid transparent;	
+	border-bottom: 7px solid #347CAC;
+    opacity: 1;
+}
+
+.lv {
+    width: 10px;
+    height: 10px;    
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 23px;
+}
+
+.max{
+    background: #F6223C;
+}
+.medium{
+	background: #F3E10F;
+}
+.low{
+	background: #31CC31;
+}

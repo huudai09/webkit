@@ -1,0 +1,79 @@
+.mention-area {
+    float: left;
+    border: 1px dotted #BBB;
+    margin: 2px;    
+}
+.mention-textarea, .mention-overlay{
+	padding: 2px;	    
+}
+.mention-textarea{
+    min-width: 400px;
+    max-width: 400px;    
+}
+
+.mention-textarea:focus{
+	outline-width: 0;
+}
+.mention-overlay{
+    overflow: hidden;
+}
+.mention-overlay b{
+    font-weight: normal; background: #B6F0F8;; border-radius: 2px;
+	box-sizing: border-box;
+	border: 1px solid #18C8FF;
+	margin-left: -2px;
+}
+.mention-box{
+	position: absolute;
+	width: 100%;
+	background: #FFF;	
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);	
+}
+.mention-box div.mention-item > img{
+    width: 20px;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+.mention-box div.mention-item{
+    position: relative;    
+    padding: 2px 4px;    
+    border-top: 1px solid #EEE;
+    font-size: 12px;
+    font-family: Tahoma;    
+}
+
+.mention-box div.mention-item.active{
+	background: #89BFDD;
+	color: #FFF;
+	text-shadow: -1px -1px 0px #437CD1;
+}
+
+.mention-previewLink {
+    border-top: 1px dotted #E4E4E4;
+    padding-top: 4px;
+    overflow: hidden;    
+}
+
+.mention-preview-img{
+    float: left;
+    box-sizing: border-box;
+}
+
+.mention-preview-img img{
+    width: 120px;
+}
+
+.mention-preview-content{
+    float: left;
+    padding-right: 5px;
+    box-sizing: border-box;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.mention-preview-content h2{
+    font-size: 16px;
+    margin: 0;
+}
+

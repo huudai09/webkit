@@ -1,0 +1,86 @@
+#time-picker{
+	width: 45%;
+	margin: 10% auto;    
+	height: 280px;            
+    position: relative;
+	background: rgb(96,108,136); /* Old browsers */  background: -moz-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6+ */  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(96,108,136,1)), color-stop(100%,rgba(63,76,107,1))); /* Chrome,Safari4+ */  background: -webkit-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10+,Safari5.1+ */  background: -o-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Opera 12+ */  background: -ms-radial-gradient(center, ellipse cover,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* IE10+ */  background: radial-gradient(ellipse at center,  rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* W3C */  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
+	box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+}
+
+.select {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background: rgba(137, 187, 219, 0.26);
+    top: 75px;
+    pointer-events: none;
+    box-shadow: inset 0px 0px 3px rgba(129, 173, 240, 0.5);
+}
+
+.time {
+    width: 33.333333333333336%;
+    min-height: 225px;    
+    max-height: 225px;    
+    overflow: hidden;
+    top: 0px;
+    float: left;
+    border: 1px solid rgba(42, 54, 87, 0.5);    
+    box-sizing: border-box;
+    background: transparent;
+}     
+
+.time:nth-child(n+2) {
+    border-left: 1px solid transparent;
+}
+
+.time .inner{
+    -webkit-transition: margin-top 1s ease-out;
+/*       -moz-transition: margin-top 2s ease-out;
+        -ms-transition: margin-top 2s ease-out;
+            transition: margin-top 2s ease-out;*/
+}
+
+.inner div {
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #D1D1D1;
+    text-shadow: 0 -2px 0px rgba(24, 30, 39, 0.33);
+    font-size: 21px;
+    font-family: Tahoma;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
+
+#time-picker .buttons button{
+	margin: 0px;
+	width: 50%;
+	line-height: 51px;
+	font-size: 20px;
+	color: #A7ADE2;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	background: transparent;
+	border: none;	
+	border-right: 1px solid rgba(42, 54, 87, 0.9);
+	text-shadow: 0 -2px 0px rgba(0, 0, 0, 0.17);
+}
+
+#time-picker .buttons button.lighten{
+	background: #FFB800;
+	color: #FFFFFF;
+}
+
+#time-picker .buttons button:last-child{
+	border: none;
+	font-size: 30px;
+}
+
+#time-picker .buttons {
+    border-top: 2px solid #FFA300;
+    display: inline-block;
+    width: 100%;
+}
