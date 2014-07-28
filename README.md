@@ -2,5 +2,7 @@ webkit
 ======
 
 My web-kit 
-<a class="jsbin-embed" href="http://jsbin.com/yakube/1/embed">Time picker</a><script src="http://static.jsbin.com/js/embed.js"></script>
-
+1. [Time picker](http://jsbin.com/yakube/1/watch?output)
+2. [Date picker](http://jsbin.com/yakube/1/watch?output)
+3. [Select chuzer](http://jsbin.com/yakube/1/watch?output)
+4. [Mention](http://jsbin.com/yakube/1/watch?output)
