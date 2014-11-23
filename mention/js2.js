@@ -153,13 +153,14 @@
                 return this.textarea.on('keyup.elastic', function() {
                             
                     if (this.scrollHeight > this.clientHeight) {
+					console.log('aaaaaaaa');
                         this.style.height = '';
-                        this.style.height = this.scrollHeight + "px";
-                        thiz.overlay.height(this.scrollHeight);
+                        this.style.height = this.scrollHeight + "px";                        
                     } else {
-                        this.style.height = '';
-                        this.style.height = this.scrollHeight + "px";
-                        thiz.overlay.height(this.scrollHeight);
+					console.log('bbbbbbbb');
+                        // this.style.height = '';
+                        // this.style.height = this.scrollHeight + "px";
+                        // thiz.overlay.height(this.scrollHeight);
                     }
                 });
             }

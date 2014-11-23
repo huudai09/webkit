@@ -1,6 +1,5 @@
 .date-picker{
     background: #FFFFFF;
-    box-shadow: 0px 7px 13px -4px rgba(0, 0, 0, 0.65);
     display: inline-block;
     width: 400px;    
 }
@@ -13,7 +12,7 @@
 .date-picker:after{
     clear: both;
 }
-.date-wrap{ padding: 10px; }
+.date-wrap{ padding: 10px; border: 1px solid #CECECE;}
 .date-picker .date-title,
 .date-picker .date-days .day,
 .date-picker .d{

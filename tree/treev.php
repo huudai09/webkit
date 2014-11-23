@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">	
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css" />
+	<title>Tree 2</title>
+	<link rel="stylesheet" href="style2.css" />
 </head>
 <body>
 	<div class="tree">
